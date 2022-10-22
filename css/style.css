@@ -1,1 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+.custom-input {
+    width: 83vw !important;
+}
+
+
+.liststyle {
+    list-style: none;
+    margin-left: 80px;
+    margin-top: 20px;
+
+
+}
+
+.hrstyle {
+    position: absolute;
+    left: 65px;
+    width: 83vw;
+
+}
+
+.loader-custom {
+    position: absolute;
+    left: 70px;
+    display: none;
+}
