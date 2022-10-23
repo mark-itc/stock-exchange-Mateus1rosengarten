@@ -1,5 +1,9 @@
 # stock-exchange-Mateus1rosengarten
-stock-exchange-Mateus1rosengarten created by GitHub Classroom
+stock-exchange-Mateus1rosengarten created by GitHub Classroom\
+
+!! MY MAIN IS MILESTONE6 !!
+
+
 
 I didnt figure out how to do the Milestone7 due the short time we had ( we had 2 weeks at all but the first week[sukot] was told in the beggin of the course 
 that we have a "rest-week" so I planned to travel with friends) and also my extremely difficult to work with javascript modules ( import/export ) no matter what I
