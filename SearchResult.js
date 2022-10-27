@@ -30,11 +30,10 @@ class CreatingResult {
       makehr = document.createElement('hr');
       makehr.classList.add('hrstyle');
 
-
-
-
-      makepar.innerHTML = `<img src=${objc[i].profile.image} class="imagesize">` + `<a href="/Users/mateus/Desktop/stock6/company.html?symbol=` + objc[i].symbol + '">'
-        + `${objc[i].profile.companyName} </a> ` + `(${objc[i].symbol}) ` + `<span class=changestyle>` + `(${objc[i].profile.changesPercentage}%)` + `</span>`
+      const term = document.getElementById('myinput').value
+      
+       makepar.innerHTML = `<img src=${objc[i].profile.image} class="imagesize">` + `<a href="./company.html?symbol=` + objc[i].symbol + '">'
+      + `${this.highli(objc[i].profile.companyName,term)} </a> ` + `(${this.highli(objc[i].symbol,term)})` + `<span class=changestyle>` + `(${objc[i].profile.changesPercentage}%)` + `</span>`
     }
     this.myresult.appendChild(makepar);
     this.myresult.appendChild(makehr);
@@ -62,6 +61,13 @@ class CreatingResult {
         this.getHistorieData()
       })
 
+
+  }
+  highli(original,termval){
+
+    let re = new RegExp(termval,"gi"); 
+    let newText = original.replace(re, `<mark>$&</mark>`);
+    return newText
 
   }
 

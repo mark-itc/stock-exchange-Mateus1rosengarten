@@ -1,4 +1,5 @@
 const mainform = document.getElementById('form');
+const divresult = document.getElementById('results')
 
 
 
@@ -34,6 +35,8 @@ class CreatingForm {
       let companies
       let resultcompanies = []
       const myinputvalue = makeinput.value;
+
+      divresult.innerHTML = ""
       const url = `https://stock-exchange-dot-full-stack-course-services.ew.r.appspot.com/api/v3/search?query=${myinputvalue}&limit=10&exchange=NASDAQ`
 
       fetch(url)
