@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>STOCK6</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  
+</head>
+
+
+<body>
+  <div id="container">
+<div id="company-image-name" class="div1">
+  <div id="company-image"></div> <span id="company-name"></span>
+
+</div>
+<div class="spinner-border text-secondary loader-custom-company" role="status" id="my-loader">
+</div>
+<div id="company-price-description" class="div2">
+  <span id="company-price"></span> <span id="company-changes"></span>
+   <div id="company-description"></div>
+
+</div>
+<div id="company-chart" class="div3">
+  <canvas id="myChart" width="1000" height="500">
+
+  </canvas>
+
+
+ </div>
+</div>
+
+  
+
+  <script src="./SearchResult.js"></script>
+  <script>
+    (async function(){
+    const form = new CreatingResult(containerDOM);
+    form.CompanyDetails()
+
+
+    })
+    ();
+  </script>
+</body>
+
+</html>
